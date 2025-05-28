@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+@font-face {
+    font-family: 'CS';
+    src: url('./src/font/Vainest.otf') format('truetype'),
+
+  }
+
+  .stack {
+    grid-template-areas:"stack";
+  }
+  .stackarea {
+
+    grid-area: stack;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+
+  /* Appliquer la barre de défilement fine pour tous les navigateurs */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px; /* Largeur fine de la barre de défilement */
+  }
+  .scrollbar-mid {
+    -ms-overflow-style: red;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
