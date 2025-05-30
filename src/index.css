@@ -8,10 +8,20 @@
 
 @font-face {
     font-family: 'CS';
-    src: url('./src/font/Vainest.otf') format('truetype'),
+    src: url('/Webfonts/UncutSans-Regular.woff') format('truetype'),
 
   }
 
+  @font-face {
+    font-family: 'BS';
+    src: url('/Webfonts/UncutSans-Bold.woff') format('truetype'),
+
+  }
+  @font-face {
+    font-family: 'SBS';
+    src: url('/Webfonts/UncutSans-SemiBold.woff') format('truetype'),
+
+  }
   .stack {
     grid-template-areas:"stack";
   }
@@ -36,3 +46,28 @@
     -ms-overflow-style: red;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
   }
+  h1{
+    font-weight: 800;
+         font-family: 'BS';
+  }
+
+  h2{
+    font-size: 28px;
+  }
+  h3{
+    font-size: 24px;
+         font-family: 'SBS';
+  }
+
+  h2,h3,h4,h5,h6,li{
+     font-family: 'CS';
+  }
+
+  .bg-zoom {
+  background-size: 100%;
+  transition: background-size 0.3s ease-in-out;
+}
+
+.bg-zoom:hover {
+  background-size: 110%;
+}
