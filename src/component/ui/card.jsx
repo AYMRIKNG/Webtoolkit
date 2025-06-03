@@ -27,7 +27,7 @@ export default function Card({ site }) {
           )}
         </div>
         <h4 className="font-bold">{site.name}</h4>
-        <h5>{site.description}</h5>
+        <h5 className='max-h-44 whitespace-normal break-words line-clamp-2'>{site.description}</h5>
       </div>
     </a>
   );
