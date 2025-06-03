@@ -23,14 +23,16 @@ export default function Sidemeu({ onCategorySelect }) {
   }, []);
 
   return (
-    <section className='hidden md:flex flex-col w-72 bg-black h-full p-4 m-2 rounded-sm'>
-    <Sidebutton tittle="Explore" image="/assets/image/nav.png"   onClick={() => {
+    <section className='hidden md:flex flex-col w-72 bg-black h-full gap-y-4 p-4 m-2 rounded-sm'>
+    <div>
+        <Sidebutton tittle="Explore" image="/assets/image/nav.png"   onClick={() => {
     console.log("Explore cliqué !");
     onCategorySelect('Explore');
   }} />
       <Sidebutton tittle="Livres" image="/assets/image/book.png" onClick={() => onCategorySelect('Livres')} />
 
-      <div className='flex flex-col h-full'>
+    </div>
+      <div className='flex flex-col grow overflow-auto overscroll-x-none'>
         <div className='flex justify-between mb-2' onClick={toggleAllTabs}>
           <h6 className='text-zinc-500 items-center'>Outils</h6>
           <img
@@ -52,12 +54,13 @@ export default function Sidemeu({ onCategorySelect }) {
           />
         ))}
 
- <button class="relative w-full inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+
+      </div>
+       <button class="absolute bottom-0 inline-flex w-52 items-end justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
 <span class="relative px-10 w-full py-2.5 transition-all ease-in duration-75 bg-white dark:bg-black rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
 Ajouter un site
 </span>
 </button>
-      </div>
     </section>
   );
 }

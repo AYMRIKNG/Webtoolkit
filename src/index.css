@@ -36,6 +36,7 @@
   
   .scrollbar-hide::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
+    color: #ff5151;
   }
 
   /* Appliquer la barre de défilement fine pour tous les navigateurs */
