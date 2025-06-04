@@ -59,7 +59,7 @@ export default function Navbar({ selectedCategory }) {
               <button
                 key={sub.name}
                 className="text-white hover:underline"
-                onClick={() => alert(`Tu as cliqué sur ${sub.name}`)} // A remplacer par ta logique
+                onClick={() => alert(`Tu as cliqué sur ${sub.name}`)} 
               >
                 {sub.name}
               </button>
