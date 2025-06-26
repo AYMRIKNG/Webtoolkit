@@ -17,7 +17,7 @@ export default function HomePage({ setSelectedCategory }) {
       .from('sites')
       .select('*')
       .order('created_at', { ascending: false })
-      .limit(20);
+      .limit(12);
 
     if (latestError) {
       console.error("Erreur lors du chargement des nouveautés :", latestError);
@@ -111,15 +111,43 @@ export default function HomePage({ setSelectedCategory }) {
              <h3>Podcast</h3>
              <h6>Tout voir</h6>
         </div>
-          <iframe
-  className='aspect-video m-8'
+ 
+        <div className='flex p-2 justify-between '> <iframe
+  className='aspect-video w-full pr-4'
   src="https://www.youtube.com/embed/xguam0TKMw8"
   title="YouTube video player"
   frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
 ></iframe>
+ <div className='hidden md:flex flex-col justify-between w-96 '>
 
+<iframe
+  className='aspect-video w-full'
+  src="https://www.youtube.com/embed/30pxmKvkzFM"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe><iframe
+  className='aspect-video w-full'
+  src="https://www.youtube.com/embed/c2sNTAaILdA"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe><iframe
+  className='aspect-video w-full'
+  src="https://www.youtube.com/embed/ND_AjF_KTD8"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+
+ </div> </div>
+    
         </div>
     </div>
   );
