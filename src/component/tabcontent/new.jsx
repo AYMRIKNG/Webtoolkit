@@ -24,7 +24,7 @@ export default function NouveautePage() {
   }, []);
 
   return (
-    <section className="text-white p-4">
+    <section className="text-white p-4 h-full scrollbar-hide overflow-scroll">
       <div className="flex justify-between items-center mb-4">
         <h3 className="font-semibold text-lg">Nouveautés</h3>
       </div>

@@ -93,7 +93,7 @@ export default function HomePage({ setSelectedCategory }) {
                  <div className='flex flex-col p-4 gap-y-4 bg-black '>
         <div className='flex justify-between'>
              <h3>Livres</h3>
-             <h6>Tout voir</h6>
+             <h6 onClick={() => setSelectedCategory("Livres")} className='hover:underline cursor-pointer ' >Tout voir</h6>
         </div>
           <div className='grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-5  gap-4'> 
          {book.map((book) => (
@@ -109,7 +109,7 @@ export default function HomePage({ setSelectedCategory }) {
           <div className='flex flex-col p-4 gap-y-4'>
         <div className='flex justify-between'>
              <h3>Podcast</h3>
-             <h6>Tout voir</h6>
+             <a className='hover:underline cursor-pointer ' href="https://youtube.com/playlist?list=PLoWhlSwYg0GYtuPxLXtV5-64XWwo2_mZa&si=XizjQUtEmNIoiqLV" target="_blank" rel="noopener noreferrer"><h6 >Tout voir</h6></a>
         </div>
  
         <div className='flex p-2 justify-between '> <iframe

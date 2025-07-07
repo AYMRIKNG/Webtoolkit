@@ -28,7 +28,7 @@ export default function Card({ site }) {
   return (
     <div
       onClick={handleClick}
-      className="flex flex-col gap-y-2 h-fit cursor-pointer"
+      className="flex flex-col gap-y-1 h-fit cursor-pointer"
     >
       <div className="aspect-[16/10] rounded-sm bg-center bg-no-repeat bg-cover bg-zoom overflow-hidden flex items-center justify-center">
         {hasImage ? (

@@ -26,7 +26,6 @@ export default function Sidemeu({ onCategorySelect }) {
     <section className='hidden md:flex flex-col w-72 bg-black h-full gap-y-4 p-4 m-2 rounded-sm'>
     <div>
         <Sidebutton tittle="Explore" image="/assets/image/nav.png"   onClick={() => {
-    console.log("Explore cliqué !");
     onCategorySelect('Explore');
   }} />
       <Sidebutton tittle="Livres" image="/assets/image/book.png" onClick={() => onCategorySelect('Livres')} />
