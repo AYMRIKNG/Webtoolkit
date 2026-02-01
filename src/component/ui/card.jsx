@@ -33,13 +33,13 @@ export default function Card({ site }) {
       <div className="aspect-[16/10] rounded-sm bg-center bg-no-repeat bg-cover bg-zoom overflow-hidden flex items-center justify-center">
         {hasImage ? (
           <img
-            src={site.preview_image}
+            src={`/assets/image/${site.preview_image}`}
             alt={site.name}
             className="w-full h-full object-cover"
           />
         ) : fallbackLogo ? (
           <img
-            src={site.logo}
+            src={`/assets/image/${site.name.toLowerCase().replace(/\s+/g, '-')}-logo.png`}
             alt={`${site.name} logo`}
             className="h-12 object-contain"
           />
